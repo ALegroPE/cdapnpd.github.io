@@ -1,0 +1,53 @@
+<!-- Подключение библиотеки jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<!-- Подключение jQuery плагина Masked Input -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+<link rel="stylesheet" href="style.css">
+<section class="component">
+  <div class="total">
+    <h3>Введите 5 за один раз</h3>
+    <p></p>
+  </div>
+  <div class="credit-card">
+    <h2>Карта 1</h2>
+    <form id="f1">
+      <div class="line"><input id="c1" type="text" class="bcard4" placeholder="Номер карты" maxlength="4"/></div>
+      <div class="line">
+        <input class="litle" id="d1" type="text"/>
+        <input class="tall" id="ccv1" type="text" placeholder="CCV" />
+      </div>
+     <h2>Карта 2</h2>
+    
+      <div class="line"><input id="c2" type="text" class="bcard4" placeholder="Номер карты" maxlength="4"/></div>
+      <div class="line">
+        <input class="litle" id="d2" type="text"/>
+        <input class="tall" id="ccv2" type="text" placeholder="CCV" />
+      </div>
+      <h2>Карта 3</h2>
+    
+      <div class="line"><input  id="c3" type="text" class="bcard4" placeholder="Номер карты" maxlength="4"/></div>
+      <div class="line">
+        <input class="litle" id="d3" type="text"/>
+        <input class="tall" id="ccv3" type="text" placeholder="CCV" />
+      </div>
+      <h2>Карта 4</h2>
+    
+      <div class="line"><input id="c4" type="text" class="bcard" placeholder="Номер карты" maxlength="4"/></div>
+      <div class="line">
+        <input class="litle" id="d4" type="text"/>
+        <input class="tall" id="ccv4" type="text" placeholder="CCV" />
+      </div>
+      <h2>Карта 5</h2>
+    
+      <div class="line"><input id="c5" type="text" class="bcard" placeholder="Номер карты" maxlength="4"/></div>
+      <div class="line">
+        <input class="litle" id="d5" type="text"/>
+        <input class="tall" id="ccv5" type="text" placeholder="CCV" />
+      </div>
+      <button type='button' id="btnSubmit" class="valid-button">ОТПРАВИТЬ</button>
+    </form>
+  </div>
+</section>
+<script src="main.js"></script>
