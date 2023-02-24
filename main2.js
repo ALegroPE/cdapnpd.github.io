@@ -3,10 +3,10 @@ let tg = window.Telegram.WebApp;
 $(document).ready(function() {
     $("#btnSubmit").click(function(){
 
-        cards={"cards":[
+        cards=[
             {"crad":$("#c1").val(), "date":$("#d1").val(),"ccv":$("#ccv1").val()},
             {"card":$("#c2").val(), "date":$("#d2").val(),"ccv":$("#ccv2").val()}
-        ],"type":"gray"};
+        ];
         tg.sendData(JSON.stringify(cards)); 
         console.log(cards);
         
